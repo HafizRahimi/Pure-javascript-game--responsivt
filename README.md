@@ -39,6 +39,10 @@ OBS
 
 if you want to write persian 
     <html lang="fa" dir="rtl">
+if you want to write persian 
+    <html lang="fa" dir="rtl">
+if you want to write persian 
+    <html lang="fa" dir="rtl">
 
 
 1- animate.style:
