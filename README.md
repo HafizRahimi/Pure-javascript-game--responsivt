@@ -1,3 +1,5 @@
+# Pure-javascript-game--responsivt
+
 
 
 Uppgift
@@ -35,6 +37,10 @@ OBS
     class="block block--mod"
 
 
+if you want to write persian 
+    <html lang="fa" dir="rtl">
+if you want to write persian 
+    <html lang="fa" dir="rtl">
 if you want to write persian 
     <html lang="fa" dir="rtl">
 
