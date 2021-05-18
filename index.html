@@ -1,0 +1,48 @@
+<html lang="en" onclick="jump()">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>TopLearn.Com - Jump Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="container">
+            <video class="video" id="video" src="videos/video.mp4" autoplay muted loop>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+            <p class="info" id="info">
+                <span class="name" id="name">name</span>
+                <span class="gameScore" id="gameScore">Score : 0</span>
+            </p>
+            <section class="game" id="game">
+                <section class="character" id="character"></section>
+                <section class="block" id="block"></section>
+            </section>
+
+            <section class="info-box game-over " id="gameOver">
+                <h1 >Game over</h1>
+                <i class="far fa-frown " ></i>
+            </section>
+
+            <section class="info-box game-win  " id="gameWin">
+                <h1 >Win the game</h1>
+                <i class="fas fa-star animate__animated animate__bounceIn animate__delay-1s" ></i>
+                <i class="fas fa-star animate__animated animate__bounceIn animate__delay-2s" ></i>
+                <i class="fas fa-star animate__animated animate__bounceIn animate__delay-3s" ></i>
+            </section>
+        </section>
+    </body>
+    <script src="script.js"></script>
+</html>
