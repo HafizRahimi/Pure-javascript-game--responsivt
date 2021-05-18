@@ -20,38 +20,18 @@ Fullscreen Video Background
 	https://www.w3schools.com/howto/howto_css_fullscreen_video.asp
 
 
---------------------------------------------------------------
+Landscape Animation For Ui Game Download:
+    https://se.depositphotos.com/200753094/stock-video-vacker-natur-landskap-hd-animation.html
+
+
+--------------------------------------------------------
+
+Detecting Screen Size and OS Dark Mode with matchMedia():
+	https://www.youtube.com/watch?v=HdRmyXL1dJA
 
 
 
 
 
-OBS
-  BEM = Block Element Modifier
-        https://toplearn.com/c/xGjr
-
-  Block__Element--Modifier:
-
-    class="form__input"
-    class="form__submit form__submit--disabled"
-    class="block block--mod"
 
 
-if you want to write persian 
-    <html lang="fa" dir="rtl">
-if you want to write persian 
-    <html lang="fa" dir="rtl">
-if you want to write persian 
-    <html lang="fa" dir="rtl">
-
-
-1- animate.style:
-        https://animate.style/
-
-2- Font Awesome:
-        https://fontawesome.com/start
-
-3- shortcut icon Website:
-        <link rel="shortcut icon" href="images/pineapple.jpg">
-
-4- onload

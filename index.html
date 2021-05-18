@@ -9,22 +9,52 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="img/coding.png" />
         <title>Game</title>
     </head>
     <body onload="">
-        <!-- <i class="far fa-address-card animate__animated animate__bounce"></i> -->
+        <!-- <i class="fas fa-star"></i>
+        <i class="far fa-star"></i> -->
 
-        <div id="info">
-            <!-- <span id="name">Name</span> -->
-        </div>
-        <div id="game">
-            <span id="name">Name</span>
-            <span id="counter">Counter</span>
-            <div id="character"></div>
-            <div id="block"></div>
-        </div>
-        <div id="floor"></div>
+        
+
+        <!-- <i class="fas fa-heart"></i>
+        <i class="far fa-heart"></i> -->
+
+        <!-- <i class="fas fa-redo"></i> -->
+
+        <!-- <i class="fas fa-user-edit"></i> -->
+
+        <!-- <i class="far fa-address-card animate__animated animate__bounce"></i> -->
+        <section class="container">
+            <section class="info-box login-game show" id="loginGame">
+                <h1>Welcome</h1>
+                <b>Name </b>
+                <input type="text" id="userName">
+                <button  id="startGameBtn">Start Game</button>
+            </section>
+            <section class="info-box lose-game " id="loseGame">
+                <h1 >Lose the game</h1>
+                <i class="far fa-frown " ></i>
+            </section>
+            <section class="info-box win-game " id="winGame">
+                <h1 >Win the game</h1>
+                <i class="fas fa-star animate__animated animate__bounceIn animate__delay-1s" ></i>
+                <i class="fas fa-star animate__animated animate__bounceIn animate__delay-2s" ></i>
+                <i class="fas fa-star animate__animated animate__bounceIn animate__delay-3s" ></i>
+            </section>
+            <video class="video" id="video" src="videos/video.mp4" autoplay muted loop>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+            <section class="game" id="game">
+                <span class="name" id="name"></span>
+                <span class="gameScore" id="gameScore">Score:0</span>
+                <div class="character" id="character"></div>
+                <div class="block" id="block"></div>
+            </section>
+        </section>
 
         <!-- <script src="https://kit.fontawesome.com/b208251be5.js"crossorigin="anonymous"></script> -->
         <script src="js/main.js"></script>
