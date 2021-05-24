@@ -28,9 +28,7 @@ const stopCheckDead = () => {
     gameWin.classList = "info-box game-win show"
 };
 
-let bLeft1 = 100;
-let bLeft2 = -100;
-let cTop = 500;
+
 
 const checkDeadFunction = () => {
     let characterTop = parseInt(
@@ -46,11 +44,11 @@ const checkDeadFunction = () => {
         // alert('Game Over. Score : ' + Math.floor(counter / 100));
         
         video.classList = "show-not";
-        info.classList = "show-not";
         game.classList = "show-not";
         gameOver.classList = "info-box game-over show"
         counter = 0;
         block.style.animation = 'block 1s infinite linear';
+        clearInterval(checkDead);
     } else {
         counter++;
         let counterF = Math.floor(counter / 100)
@@ -65,13 +63,26 @@ const checkDeadFunction = () => {
 
 
 
+let w = window.innerWidth;
+let h = window.innerHeight;
+
+console.log(w);
+
+let bLeft1 = 0;
+let bLeft2 = 0;
+let cTop = 0;
+
+if(w === 1440){
+    console.log(w);
+    bLeft1 = 100;
+    bLeft2 = -100;
+    cTop = 500;
+    var checkDead = setInterval(checkDeadFunction, 10);
+}else{
+    console.log('Whatd fff ');
+    video.classList = "show-not";
+    game.classList = "show-not";
+}
 
 
-const checkDead = setInterval(checkDeadFunction, 10);
 
-
-
-// startGameBtn.addEventListener('click', () => {
-//     let w = window.innerWidth;
-//     let h = window.innerHeight;
-// })
