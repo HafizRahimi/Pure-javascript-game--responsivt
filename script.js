@@ -35,26 +35,26 @@ const checkDead = setInterval(function () {
     let blockLeft = parseInt(
         window.getComputedStyle(block).getPropertyValue('left')
     );
-    if (blockLeft < 100 && blockLeft > -100 && characterTop >= 500) {
-        block.style.animation = 'none';
-        // alert('Game Over. Score : ' + Math.floor(counter / 100));
+    // if (blockLeft < 100 && blockLeft > -100 && characterTop >= 500) {
+    //     block.style.animation = 'none';
+    //     // alert('Game Over. Score : ' + Math.floor(counter / 100));
         
-        video.classList = "show-not";
-        info.classList = "show-not";
-        game.classList = "show-not";
-        gameOver.classList = "info-box game-over show"
-        counter = 0;
-        block.style.animation = 'block 1s infinite linear';
-    } else {
-        counter++;
-        let counterF = Math.floor(counter / 100)
-        document.getElementById('gameScore').innerHTML =`Score : ${counterF}`;
+    //     video.classList = "show-not";
+    //     info.classList = "show-not";
+    //     game.classList = "show-not";
+    //     gameOver.classList = "info-box game-over show"
+    //     counter = 0;
+    //     block.style.animation = 'block 1s infinite linear';
+    // } else {
+    //     counter++;
+    //     let counterF = Math.floor(counter / 100)
+    //     document.getElementById('gameScore').innerHTML =`Score : ${counterF}`;
 
-        if(counterF > 5 ){
-            console.log('stopCheckDead run');
-            stopCheckDead()
-        }
-    }
+    //     if(counterF > 5 ){
+    //         console.log('stopCheckDead run');
+    //         stopCheckDead()
+    //     }
+    // }
 
 
 }, 10);

@@ -1,7 +1,6 @@
 * {
-    padding: 0;
     margin: 0 auto;
-    overflow-x: hidden;
+    position: 0;
 }
 
 .show{
@@ -12,17 +11,23 @@
     display: none !important;
 }
 
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
 /* width: 1440px */
 .container{
     width: 1440px;
-    height: 991px;
-    /* background-color: aqua; */
+    height: 100vh;
+    background-color: aqua;
 }
-
 
 .video{
     width: 1440px;
-    height: 991px;
     margin: auto;
     position: absolute;
     z-index: 3;
@@ -30,10 +35,8 @@
 
 
 .game {
-    width: 1440px;
     height: 700px;
-    top: 26px;
-    border: 1px solid black;
+    border: 1px solid rgb(251, 255, 0);
     margin: auto;
     position: relative;
     z-index: 3;
@@ -41,7 +44,6 @@
 .character {
     width: 100px;
     height: 200px;
-    /* background-color: red; */
     background-image: url("img/Character/run.gif");
     background-position: center; 
     background-size: cover;
@@ -85,13 +87,14 @@
     }
 }
 .info {
+    width: 100%;
     text-align: center;
-    margin: 20px;
     font-weight: bold;
-    position: relative;
-    z-index: 3;
-    top: 15px;
-    font-size: 20px;
+    position: absolute;
+    z-index: 4;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    top: 10%;
 }
 
 .name{
@@ -121,3 +124,50 @@ i{
 .game-over{
     display: none;
 }
+
+
+
+
+/* width: 1024px */
+@media (max-width:1439.98px) {
+    .container,.video{
+        width: 1024px;
+    }
+    .game{
+
+    }
+}
+
+
+/* width: 768px */
+@media (max-width:1023.98px) {
+    .container, .video{
+        width: 768px;
+    }
+}
+
+/* width: 425px */
+@media (max-width:767.98px) {
+    .container, .video{
+        width: 425px;
+    }
+}
+
+
+/* width: 375px */
+@media (max-width:424.98px) {
+    .container, .video{
+        width: 375px;
+    }
+}
+
+/* width: 320px */
+@media (max-width:374.98px) {
+    .container, .video{
+        width: 320px;
+    }
+}
+
+
+
+
