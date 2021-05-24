@@ -61,19 +61,34 @@ const checkDeadFunction = () => {
     }
 }
 
+let mq = window.matchMedia('(max-width: 2560px)');
+let mq1 = window.matchMedia('(max-width: 1440px)');
+let mq2 = window.matchMedia('(max-width: 1024px)');
+let mq3 = window.matchMedia('(max-width: 768px)');
+let mq4 = window.matchMedia('(max-width: 425px)');
+let mq5 = window.matchMedia('(max-width: 375px)');
+let mq6 = window.matchMedia('(max-width: 320px)');
+
+// console.log(mql.matches);
 
 
-let w = window.innerWidth;
-let h = window.innerHeight;
-
-console.log(w);
 
 let bLeft1 = 0;
 let bLeft2 = 0;
 let cTop = 0;
 
-if(w === 1440){
-    console.log(w);
+if(mq6.matches){
+    console.log('320');
+}else if(mq5.matches){
+    console.log('375');
+}else if(mq4.matches){
+    console.log('425');
+}else if(mq3.matches){
+    console.log('768');
+}else if(mq2.matches){
+    console.log('1024');
+}else if(mq1.matches){
+    console.log('1440');
     bLeft1 = 100;
     bLeft2 = -100;
     cTop = 500;
