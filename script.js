@@ -35,6 +35,7 @@ const checkDead = setInterval(function () {
     let blockLeft = parseInt(
         window.getComputedStyle(block).getPropertyValue('left')
     );
+
     // if (blockLeft < 100 && blockLeft > -100 && characterTop >= 500) {
     //     block.style.animation = 'none';
     //     // alert('Game Over. Score : ' + Math.floor(counter / 100));
@@ -55,6 +56,11 @@ const checkDead = setInterval(function () {
     //         stopCheckDead()
     //     }
     // }
-
-
 }, 10);
+
+
+
+startGameBtn.addEventListener('click', () => {
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+})
